@@ -1,0 +1,8 @@
+name: AthenaQuizzer
+version: '${project.version}'
+main: lunatic.athenaquizzer.Main
+api-version: '1.21'
+commands:
+  quizzer:
+    description: Do Quiz
+    permission: quizzer.use

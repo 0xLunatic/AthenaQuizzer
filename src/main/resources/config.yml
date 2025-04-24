@@ -1,0 +1,55 @@
+# config.yml
+
+# Quiz Settings
+quiz:
+  interval_seconds: 300  # How often (in seconds) to send a new question
+  one_word_only: true    # Require answers to be a single word
+  max_attempts: 3        # Number of attempts before revealing the answer
+  correct_message: "Correct! 🎉"
+  incorrect_message: "Wrong answer. Try again!"
+  reveal_answer_message: "The correct answer was: {answer}"
+
+# Messages
+messages:
+  quiz_prefix: "§e[Quizzer]"
+  quiz_prompt: "🧠 Quiz Time! Here's your question:"
+  waiting_for_answer: "Waiting for your one-word answer..."
+  already_answered: "You’ve already answered this question."
+
+sound:
+  quiz_start:
+    sound: "ENTITY.PLAYER.LEVELUP"
+    volume: 100
+    pitch: 1
+  quiz_answered:
+    sound: "ENTITY.ENDER_DRAGON.GROWL"
+    volume: 100
+    pitch: 1
+  quiz_failed:
+    sound: "ENTITY.ALLAY.ITEM_THROWN"
+    volume: 100
+    pitch: 0
+  quiz_attempt:
+    sound: "ENTITY.CAT.AMBIENT"
+    volume: 100
+    pitch: 0
+
+# Permissions
+permissions:
+  quizplugin.receive:
+    description: Receive quiz notifications
+    default: true
+  quizplugin.answer:
+    description: Answer quiz questions
+    default: true
+  quizplugin.admin:
+    description: Admin permission to control quiz
+    default: op
+
+rewards:
+  command: "/give <player> diamond 1"
+
+# Logging
+logging:
+  enabled: true
+  level: INFO
