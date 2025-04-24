@@ -18,8 +18,8 @@ AthenaQuizzer is a Minecraft plugin designed to create and manage quizzes within
 
 ## Commands
 
-- `/quiz start`: Start an instant quiz with a random question.
-- `/quiz interval <seconds>`: Set the interval time for regular quizzes.
+- `/quizzer start`: Start an instant quiz with a random question.
+- `/quizzer reload`: To reload config.
 
 ## Configuration
 
